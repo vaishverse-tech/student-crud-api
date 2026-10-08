@@ -42,3 +42,11 @@ Install the required packages:
 
 ```bash
 pip install -r requirements.txt
+Run the application:
+
+uvicorn main:app --reload
+
+Open Swagger UI:
+
+http://127.0.0.1:8000/docs
+
