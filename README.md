@@ -1,4 +1,3 @@
-# Students Database CRUD Application
 
 A simple Student Database CRUD API built using Python, FastAPI, and SQLite.
 
@@ -6,13 +5,7 @@ A simple Student Database CRUD API built using Python, FastAPI, and SQLite.
 
 This project provides a REST API to manage student records.
 
-The application supports the following CRUD operations:
 
-- Create a student
-- Read all students
-- Read a single student
-- Update student details
-- Delete a student
 
 ## Technologies Used
 
@@ -24,8 +17,6 @@ The application supports the following CRUD operations:
 
 ## Student Details
 
-Each student record can contain:
-
 - Student ID
 - Name
 - Date of Birth
@@ -35,15 +26,19 @@ Each student record can contain:
 - Address
 - Enrollment Date
 
-## Project Structure
+## API Endpoints
 
-```text
-student-crud-api/
-│
-├── main.py
-├── database.py
-├── schemas.py
-├── students.db
-├── requirements.txt
-├── README.md
-└── venv/
+| Method | Endpoint | Description |
+|---|---|---|
+| POST | /students | Create a student |
+| GET | /students | Get all students |
+| GET | /students/{student_id} | Get a single student |
+| PUT | /students/{student_id} | Update a student |
+| DELETE | /students/{student_id} | Delete a student |
+
+## How to Run
+
+Install the required packages:
+
+```bash
+pip install -r requirements.txt
